@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: absolute;
+    width: 100vw;
+    height: 20px;
+    background: linear-gradient(10deg, red, yellow, rgb(144, 144, 255));
+}
+
+main{
+    padding-top: 35px;
+    max-height: 100vh;
+    min-height: 100vh;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1{
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.maincenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    border: 2px solid black;
+    border-radius: 10%;
+    height: 300px;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(253, 169, 253, 0.671);
+}
+
+.maincenter p{
+    border: 2px solid black;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.maincenter p:hover{
+    background-color: rgb(142, 228, 72);
+    transition: 0.5s ease-in-out ;
+}
+
+li{
+    margin-bottom: 10px;
+    
+}
+
+@keyframes bounce {
+    0% {
+     color: black;
+    }
+    50% {
+      transform: scale(0.5);
+      opacity: 0.5;
+      color: white;
+    }
+    100% {
+      color: black;
+    }
+}
